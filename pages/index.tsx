@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Header from "../components/header/Header";
 
-export default function Home(): JSX.Element{
+function Home() {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-    </Layout>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
+
+export default Home;
