@@ -11,7 +11,7 @@ export const Home = styled.section`
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-position: right top;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 `
 
 export const HomeContent = styled.div`
