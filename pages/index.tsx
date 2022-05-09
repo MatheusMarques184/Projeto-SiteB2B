@@ -1,11 +1,17 @@
 import Header from "../components/header/Header";
-import Content from "../components/Content/Content"
+import Main from "../components/Main/Main"
+import Partners from "../components/Partners/Partners";
+import GetStarted from "../components/GetStarted/GetStarted";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
   return (
     <div>
       <Header />
-      <Content />
+      <Main />
+      <Partners />
+      <GetStarted />
+      <Footer />
     </div>
   );
 }
