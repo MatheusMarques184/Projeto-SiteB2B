@@ -20,6 +20,20 @@ const GlobalStyle = createGlobalStyle`
           url('../fonts/raleway-v27-latin-800.svg#Raleway') format('svg'); /* Legacy iOS */
     }
 
+    @font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      src: url('../fonts/raleway-v27-latin-regular.eot'); /* IE9 Compat Modes */
+      src: local(''),
+          url('../fonts/raleway-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/raleway-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/raleway-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/raleway-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/raleway-v27-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    }
+
+
     * {
         margin: 0;
         padding: 0;
@@ -27,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-family: 'Raleway', sans-serif;
+        border: none;
     }
     html {
         font-size: 62.5%;
@@ -44,7 +59,9 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.9rem;
       line-height: 2.6rem;
     }
-
+    a {
+      text-decoration: none;
+    }
 `
 
 export default GlobalStyle;

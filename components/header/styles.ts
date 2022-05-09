@@ -37,6 +37,7 @@ export const Menu = styled.aside`
   width: 100%;
   height: 10.2rem;
   z-index: 1;
+  background-color: var(--white-color);
   ${media.lessThan("large")`
     display: none;
     border: none;
@@ -53,6 +54,7 @@ export const Menu2= styled.aside`
   width: 100%;
   z-index: 1;
   height: 10.2rem;
+  background-color: var(--white-color);
 
   ${media.lessThan("large")`
     display: none;
@@ -120,6 +122,11 @@ export const SignUpLi = styled.li`
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+
+  &:hover {
+    transition: 300ms ease-in-out;
+    background-color: #337356;
+  }
 `
 
 export const LinkLi = styled.li`
@@ -133,12 +140,12 @@ export const LinkLi = styled.li`
 `
 
 export const SignUpA = styled.a`
-  text-decoration: none;
   font-weight: 800;
   font-size: 17px;
   line-height: 20px;
   color: var(--white-color);
   text-align: center;
+
 `;
 
 export const LinkA = styled.a`
@@ -151,6 +158,11 @@ export const LinkA = styled.a`
   ${media.lessThan("large")`
     border: none;
   `}
+
+  &:hover {
+    transition: 300ms ease-in-out;
+    color:var(--primary-color)
+  }
 `;
 
 export const MenuSpacing = styled.div`
