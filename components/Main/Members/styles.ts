@@ -103,7 +103,7 @@ export const MembersTitle = styled(S.genericTitle)`
   `}
 `
 
-export const MembersEmail = styled.div`
+export const MembersEmail = styled.form`
   display: flex;
   flex-direction: row;
   justify-content: center;
