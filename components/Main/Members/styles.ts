@@ -156,4 +156,15 @@ export const MembersEmailSubmit = styled.input`
 
 export const MsgSubmit = styled.p`
   color: var(--primary-color);
+  ${media.lessThan("medium")`
+    display: none;
+  `}
+`
+
+export const MsgSubmitMobile = styled(MsgSubmit)`
+  display:none;
+  ${media.lessThan("medium")`
+    margin-bottom: 1rem;
+    display: block;
+  `}
 `

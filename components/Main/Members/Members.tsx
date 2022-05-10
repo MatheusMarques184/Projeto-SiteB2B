@@ -25,6 +25,7 @@ export default function Members(): JSX.Element {
               <S.MembersTitle>Learn how others are reaching their audience easier than ever before.</S.MembersTitle>
               <S.MembersEmail>
                 <S.MembersEmailInput type="text" placeholder="Enter your email"/>
+                <S.MsgSubmitMobile>{msgSubmit}</S.MsgSubmitMobile>
                 <S.MembersEmailSubmit type="submit" value="JOIN OUR LIST" onClick={() => setMsgSubimit("Thanks! Email received.")}/>
               </S.MembersEmail>
               <S.MsgSubmit>{msgSubmit}</S.MsgSubmit>
