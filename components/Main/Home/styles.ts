@@ -6,7 +6,6 @@ export const Home = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //justify-content: ;
   width: 108.6rem;
   height: 38.3rem;
   background-image: url(${props => props.img});
@@ -39,7 +38,6 @@ export const HomeContent = styled.div`
   ${media.lessThan("medium")`
     width: 30rem;
   `}
-
 `
 
 export const HomeTitle = styled(S.genericTitle)``
@@ -56,14 +54,14 @@ export const HomeLinks = styled.div`
 export const HomeText = styled.div``
 
 export const LinkTry = styled(S.Link)`
- color: var(--white-color);
- background-color: var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
 `
 
 export const LinkDemo = styled(S.Link)`
- color: var(--primary-color);
- background-color: var(--white-color);
- border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 3px solid var(--primary-color);
 `
 
 export const HomeImage = styled.img`

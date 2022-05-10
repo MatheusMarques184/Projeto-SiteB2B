@@ -19,6 +19,7 @@ export const FooterContent = styled.div`
   justify-content: space-between;
   padding: 1rem;
   width: 50%;
+
   ${media.lessThan("medium")`
     width: 70%;
   `}
@@ -28,6 +29,7 @@ export const FooterTop = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
   ${media.lessThan("medium")`
     flex-direction: column;
     justify-content: center;
@@ -48,6 +50,7 @@ export const FooterTopRight = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
   ${media.lessThan("medium")`
     flex-direction: column;
     justify-content: start;
@@ -59,6 +62,7 @@ export const FooterColumnLink = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 2rem 2rem 2rem;
+
   ${media.lessThan("medium")`
     margin: 0;
   `}
@@ -71,6 +75,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
   color: var(--black-color);
   width: min-content;
+
   &:hover{
     color:var(--primary-color)
   }
@@ -85,6 +90,7 @@ export const FooterBack = styled.div`
   justify-content: space-between;
   border-top: solid 2px #DBDBDB;
   padding-top: 3rem;
+
   ${media.lessThan("medium")`
     flex-direction: column;
     justify-content: left;
@@ -95,6 +101,7 @@ export const FooterCopywrite = styled.p`
   font-size: 1.5rem;
   font-weight: 800;
   word-break: break-word;
+
   ${media.lessThan("medium")`
     font-size: 0.9rem;
   `}
@@ -111,9 +118,11 @@ const link = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: var(--black-color);
+
   &:hover{
     color:var(--primary-color)
   }
+
   ${media.lessThan("medium")`
     justify-content: start;
     padding-top: 2rem;

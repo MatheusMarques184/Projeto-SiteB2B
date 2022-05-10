@@ -13,6 +13,7 @@ export const MoreCustomers = styled.section`
   background-position: center;
   background-size: cover;
   margin-bottom: 10rem;
+
   ${media.lessThan("large")`
     width: 90vw;
     height: 34.7rem;
@@ -24,6 +25,7 @@ export const MoreCustomersContent = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 20rem;
+
   ${media.lessThan("large")`
     height: 12rem;
   `}

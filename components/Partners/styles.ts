@@ -9,6 +9,7 @@ export const Partners = styled.section`
   justify-content: center;
   align-items: center;
   height: 36.6rem;
+
   ${media.lessThan("medium")`
     height: 60rem;
   `}
@@ -27,6 +28,7 @@ export const PartnersTitle = styled(S.genericTitle)`
   width: 50rem;
   line-height: 4.8rem;
   margin-bottom: 4rem;
+
   ${media.lessThan("medium")`
     width: 30rem;
     font-size: 3.0rem;

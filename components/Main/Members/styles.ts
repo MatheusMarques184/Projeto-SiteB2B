@@ -5,9 +5,11 @@ import * as S from "../../../public/styles/styles";
 export const Members = styled.section`
   width: 108.9rem;
   height: 53rem;
+
   ${media.lessThan("large")`
     width: 90vw;
   `}
+
   ${media.lessThan("medium")`
     height: 110rem;
   `}
@@ -20,6 +22,7 @@ export const MembersContent = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
   ${media.lessThan("medium")`
     justify-content: start;
   `}
@@ -29,6 +32,7 @@ export const MembersCards = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   ${media.lessThan("medium")`
     flex-direction: column;
   `}
@@ -50,6 +54,7 @@ export const Member = styled.div`
     width: 22.3rem;
     height: 15.7rem;
   `}
+
   ${media.lessThan("medium")`
     width: 25rem;
     margin-bottom: 2rem;
@@ -63,6 +68,7 @@ export const MemberName = styled.h3`
   line-height: 4rem;
   color: var(--white-color);
   align-items: baseline;
+
   ${media.lessThan("medium")`
   font-size: 2.2rem;
   line-height: 2rem;
@@ -72,6 +78,7 @@ export const MemberName = styled.h3`
 export const MemberSince = styled.p`
   color: var(--white-color);
   font-weight: 700;
+
   ${media.lessThan("medium")`
   font-size: 1.2rem;
   `}
@@ -89,6 +96,7 @@ export const MembersTitle = styled(S.genericTitle)`
   text-align: center;
   line-height: 4.8rem;
   padding-top: 4rem;
+
   ${media.lessThan("medium")`
     width: 30rem;
     font-size: 3.0rem;
@@ -101,6 +109,7 @@ export const MembersEmail = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
+
   ${media.lessThan("medium")`
     flex-direction: column;
   `}
@@ -117,6 +126,7 @@ export const MembersEmailInput = styled.input`
   color: var(--black-color);
   line-height: 25px;
   margin-right: 1rem;
+
   ${media.lessThan("medium")`
     width: 28rem;
     height: 5rem;
@@ -135,6 +145,7 @@ export const MembersEmailSubmit = styled.input`
   letter-spacing: 0.105rem;
   color: var(--white-color);
   margin-left: 1rem;
+
   ${media.lessThan("medium")`
     width: 12rem;
     height: 5rem;

@@ -74,7 +74,8 @@ export const CloseMenu = styled.input`
     &:checked ~ ${CloseMenuLabel}::after {
       content: "×";
       color: var(--black-color);
-    }`}
+    }
+  `}
 `;
 
 export const MenuContent = styled(S.MainContent)`
@@ -83,6 +84,7 @@ export const MenuContent = styled(S.MainContent)`
   align-items: center;
   height: 100%;
   padding-top: 2.1rem;
+
   ${media.lessThan("medium")`
     height: 100vh;
     flex-direction: column;
@@ -99,6 +101,7 @@ export const TitleMenu = styled.h1`
 `;
 
 export const LogoMenu = styled.a`
+
 ${media.lessThan("large")`
   width: 17rem;
   height: 5.2rem;
@@ -108,6 +111,7 @@ ${media.lessThan("large")`
 export const UlMenuMobile = styled.ul`
   list-style: none;
   display: none;
+
   ${media.lessThan("medium")`
     display: flex ;
     flex-direction: column;
@@ -118,6 +122,7 @@ export const UlMenuMobile = styled.ul`
 export const UlMenu = styled.ul`
   list-style: none;
   display: flex;
+
   ${media.lessThan("medium")`
     display: none ;
   `}
@@ -155,9 +160,11 @@ export const SignUpA = styled.a`
   line-height: 2.0rem;
   color: var(--white-color);
   text-align: center;
+
   ${media.lessThan("large")`
     font-size: 1.2rem;
   `}
+
   ${media.lessThan("medium")`
     color: var(--primary-color);
   `}
