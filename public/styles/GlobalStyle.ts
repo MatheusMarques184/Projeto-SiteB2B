@@ -47,6 +47,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 62.5%;
         scroll-behavior: smooth;
         font-family: 'Raleway', sans-serif;
+        overflow-x: hidden;
     }
     body {
         color: var(--black-color);
