@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 import * as S from "../../public/styles/styles";
 
 export const GetStarted = styled.section`

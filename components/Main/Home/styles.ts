@@ -6,27 +6,47 @@ export const Home = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  //justify-content: ;
   width: 108.6rem;
   height: 38.3rem;
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-position: right top;
   margin-bottom: 10rem;
+
+  ${media.lessThan("large")`
+    width: 90vw;
+  `}
+
+  ${media.lessThan("medium")`
+    min-width: 31rem;
+    background-position: center;
+    background-size: cover;
+  `}
 `
 
 export const HomeContent = styled.div`
   width: 48.9rem;
-  height: 31.7rem;
+  width: 49rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  ${media.lessThan("large")`
+    width: 40rem;
+  `}
+
+  ${media.lessThan("medium")`
+    width: 30rem;
+  `}
+
 `
 
-export const HomeTitle = styled(S.genericTitle)`
-  width: 49rem;
-`
+export const HomeTitle = styled(S.genericTitle)``
 
-export const Paragraph = styled.p``
+export const Paragraph = styled.p`
+  margin-bottom: 3.5rem;
+`
 
 export const HomeLinks = styled.div`
   display: flex;

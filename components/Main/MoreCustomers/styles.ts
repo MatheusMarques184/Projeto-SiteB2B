@@ -10,7 +10,13 @@ export const MoreCustomers = styled.section`
   width: 94.4rem;
   height: 53.1rem;
   background-image: url(${props => props.img});
+  background-position: center;
+  background-size: cover;
   margin-bottom: 10rem;
+  ${media.lessThan("large")`
+    width: 90vw;
+    height: 34.7rem;
+  `}
 `
 export const MoreCustomersContent = styled.div`
   display: flex;
@@ -18,6 +24,9 @@ export const MoreCustomersContent = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 20rem;
+  ${media.lessThan("large")`
+    height: 12rem;
+  `}
 `
 export const MoreCustomersTitle = styled(S.genericTitle)`
   color: var(--white-color);

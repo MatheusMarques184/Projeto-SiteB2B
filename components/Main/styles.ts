@@ -8,6 +8,8 @@ export const Background = styled.main`
   justify-content: center;
   flex-direction: column;
   padding-top: 9rem;
+  width: 100vw;
+  overflow: hidden;
 `
 
 export default Background;

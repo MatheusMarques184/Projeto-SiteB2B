@@ -11,7 +11,7 @@ export const CloseMenuLabel = styled.label`
     top: 2rem;
     right: 2rem;
     color: var(--black-color);
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 3rem;
     width: 5rem;
     height: 5rem;
@@ -20,7 +20,7 @@ export const CloseMenuLabel = styled.label`
     cursor: pointer;
   }
 
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     &:after{
         display: block;
     }
@@ -38,7 +38,8 @@ export const Menu = styled.aside`
   height: 10.2rem;
   z-index: 1;
   background-color: var(--white-color);
-  ${media.lessThan("large")`
+
+  ${media.lessThan("medium")`
     display: none;
     border: none;
   `}
@@ -56,7 +57,7 @@ export const Menu2= styled.aside`
   height: 10.2rem;
   background-color: var(--white-color);
 
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     display: none;
   `}
 `;
@@ -64,7 +65,7 @@ export const Menu2= styled.aside`
 export const CloseMenu = styled.input`
   display: none;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     &:checked ~ ${Menu} ~ ${Menu2} {
         display: block;
         bottom: 0;
@@ -82,10 +83,12 @@ export const MenuContent = styled(S.MainContent)`
   align-items: center;
   height: 100%;
   padding-top: 2.1rem;
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    background: var(--white-color);
   `}
 `;
 
@@ -95,12 +98,17 @@ export const TitleMenu = styled.h1`
   line-height: 41px;
 `;
 
-export const LogoMenu = styled.a``;
+export const LogoMenu = styled.a`
+${media.lessThan("large")`
+  width: 17rem;
+  height: 5.2rem;
+  `}
+`;
 
 export const UlMenuMobile = styled.ul`
   list-style: none;
   display: none;
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +118,7 @@ export const UlMenuMobile = styled.ul`
 export const UlMenu = styled.ul`
   list-style: none;
   display: flex;
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     display: none ;
   `}
 `;
@@ -137,15 +145,22 @@ export const LinkLi = styled.li`
   align-items: center;
   padding: 1rem 1rem;
   border-bottom: 5px solid var(--primary-color);
+  min-width: 2rem;
+
 `
 
 export const SignUpA = styled.a`
   font-weight: 800;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.7rem;
+  line-height: 2.0rem;
   color: var(--white-color);
   text-align: center;
-
+  ${media.lessThan("large")`
+    font-size: 1.2rem;
+  `}
+  ${media.lessThan("medium")`
+    color: var(--primary-color);
+  `}
 `;
 
 export const LinkA = styled.a`
@@ -156,6 +171,10 @@ export const LinkA = styled.a`
   color: var(--black-color);
 
   ${media.lessThan("large")`
+  font-size: 1.2rem;
+  `}
+
+  ${media.lessThan("medium")`
     border: none;
   `}
 
@@ -168,7 +187,7 @@ export const LinkA = styled.a`
 export const MenuSpacing = styled.div`
   height: 10.2rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan("medium")`
     display: none;
   `}
 `;

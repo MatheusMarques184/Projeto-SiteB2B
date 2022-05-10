@@ -15,14 +15,20 @@ export const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
   width: 94.4rem;
-  height: 70%;
+  height: 100%;
   justify-content: space-between;
+  padding: 1rem;
+  width: 90%;
 `
 
 export const FooterTop = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    justify-content: center;
+  `}
 `
 
 export const FooterTopLeft = styled.div``
@@ -37,6 +43,12 @@ export const FooterTopRight = styled.div`
   flex-direction: row;
   width:50rem;
   justify-content: space-between;
+  flex-wrap: wrap;
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    justify-content: start;
+    height: 20rem;
+  `}
 `
 
 export const FooterColumnLink = styled.div`
@@ -54,6 +66,10 @@ export const FooterLink = styled.a`
   &:hover{
     color:var(--primary-color)
   }
+
+  ${media.lessThan("medium")`
+    font-size: 1.2rem;
+  `}
 `
 
 export const FooterBack = styled.div`
@@ -61,11 +77,19 @@ export const FooterBack = styled.div`
   justify-content: space-between;
   border-top: solid 2px #DBDBDB;
   padding-top: 3rem;
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    justify-content: left;
+  `}
 `
 
 export const FooterCopywrite = styled.p`
   font-size: 1.5rem;
   font-weight: 800;
+  word-break: break-word;
+  ${media.lessThan("medium")`
+    font-size: 0.9rem;
+  `}
 `
 
 
@@ -82,8 +106,15 @@ const link = styled.a`
   &:hover{
     color:var(--primary-color)
   }
+  ${media.lessThan("medium")`
+    justify-content: start;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+  `}
 `
 
 export const FooterTerms = styled(link)``
 
-export const FooterPolicy = styled(link)``
+export const FooterPolicy = styled(link)`
+  padding-bottom: 5rem;
+`
